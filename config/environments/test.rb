@@ -5,6 +5,7 @@
 
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
+  config.hosts << "www.example.com"
 
   config.cache_classes = true
 
@@ -35,4 +36,5 @@ Rails.application.configure do
 
   # Raises error for missing translations.
   # config.action_view.raise_on_missing_translations = true
+  config.file_watcher = ActiveSupport::FileUpdateChecker
 end
