@@ -30,3 +30,17 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'jsonapi.rb'
+gem 'responders'
+group :development, :test do
+  gem 'dotenv-rails'
+  gem 'faker'
+  gem 'pry-byebug'
+  gem 'rspec-rails', '~> 4.0.1'
+  gem 'factory_bot_rails'
+  gem 'guard', require: false
+  gem 'guard-rspec', require: false
+end
+group :test do
+  gem 'simplecov', require: false
+end
